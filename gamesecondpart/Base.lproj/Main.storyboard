@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Instructions View Controller-->
         <scene sceneID="3QW-YW-CWI">
             <objects>
-                <viewController id="qds-oz-q4a" sceneMemberID="viewController">
+                <viewController id="qds-oz-q4a" customClass="InstructionsViewController" customModule="gamesecondpart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OnV-0Y-Wxw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,8 +26,8 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="PRD-CD-rWf"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbI-hL-4lv">
-                                <rect key="frame" x="29" y="101" width="316" height="412"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9z-k1-LjA">
+                                <rect key="frame" x="16" y="36" width="343" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -35,6 +35,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YZT-Uu-VhZ"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="J9z-k1-LjA" id="Jaf-Y3-tEK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPl-8w-Ys1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
